@@ -24,3 +24,8 @@ HTML, CSS, JavaScript, Python, Django, Pandas, Sklearn, Keras, Git, Linux, AWS -
 5. CONTROLLER : it is the interface between the model and the view
 
 ## URLS VIEWS ##
+1. urly.py : contains all the path/route. 
+2. any new path must be added to the list urlpatterns[]
+3. Make sure to import the package before adding the path
+
+ 
