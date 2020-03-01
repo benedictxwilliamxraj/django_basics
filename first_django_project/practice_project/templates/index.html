@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+  <body>
+    <h1>MY FIRST django</h1>
+    <h2>Learned uptill now</h2>
+    <ul>
+      <li>Setup a project</li>
+      <li>Start a project</li>
+      <li>Setup a page</li>
+    </ul>
+    <a href="{% url 'contact' %}">Go to</a>
+    <button type="button" name="button" onclick="bfunc()">CLick me</button>
+    <script src="{% static 'main.js' %}"></script>
+  </body>
+</html>

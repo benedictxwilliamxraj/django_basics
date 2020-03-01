@@ -27,5 +27,23 @@ HTML, CSS, JavaScript, Python, Django, Pandas, Sklearn, Keras, Git, Linux, AWS -
 1. urly.py : contains all the path/route. 
 2. any new path must be added to the list urlpatterns[]
 3. Make sure to import the package before adding the path
+NOTE: create a file views.py to request and render
 
- 
+## Templates/Settings ##
+1. Create a View/UI folder in the main-project-folder
+2. Link it with project by --> SETTINGS.PY --> TEMPLATES[]--> DIRS:['folder_name']
+3. Create your html file and route path as mentioned above
+
+## Multipage Site ##
+Note : Following are not steps, but important points 
+1.  URL Link format : {% url 'name_of_path' %}
+2. name_of_path is mentioned inside path list of that particular page
+
+## Static FILES - CSS/JS/Images
+1. Configure settings.py
+    import os.path
+    STATICFILES_DIRE = (os.path.join('folder_name'),)
+
+2. URL Link format : {% static 'folder_name(js/img/css)' %} 
+
+## Forms In/Out ##

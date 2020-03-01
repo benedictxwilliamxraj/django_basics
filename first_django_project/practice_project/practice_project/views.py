@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('This is working')
+    return render(request, 'index.html')
+
+def contact(request):
+    return render(request, 'contact.html')
